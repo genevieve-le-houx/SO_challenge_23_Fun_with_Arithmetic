@@ -49,12 +49,6 @@ def main():
     # Find loop stats
     loop_stats = get_loop_stats(list_numbers)
 
-    array_numbers = np.array(list(loop_stats.repeat_count.keys()))
-    array_count_numbers = np.array(list(loop_stats.repeat_count.values()))
-
-    array_digit = np.array(list(loop_stats.digit_frequency.keys()))
-    array_repeat_digit = np.array(list(loop_stats.digit_frequency.values()))
-
 
     # Find mode
     max_repeat = np.max(list(loop_stats.repeat_count.values()))
